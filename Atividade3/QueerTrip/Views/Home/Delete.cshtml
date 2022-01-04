@@ -1,0 +1,21 @@
+@model QueerTrip.Models.user
+
+@{
+    ViewData["Title"] = "Deletar";
+}
+
+
+<h1>Informações Pessoais</h1>
+
+<h3>Id: @Model.Id</h3>
+<h4>Nome: @Model.Nome</h4>
+<h4>Partida: @Model.Partida</h4>
+<h4>Destino: @Model.Destino</h4>
+<h4>Checkin: @Model.Checkin</h4>
+<h4>Checkout: @Model.Checkout</h4>
+<hr/>
+
+<form asp-action="Deletar" method="post">
+    <a><button type="submit" class="btn btn-danger" >Deletar</button></a>
+    <a asp-action="Index"><button type="button" class="btn btn-dark">Voltar pra index</button></a>
+</form>

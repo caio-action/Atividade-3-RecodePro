@@ -1,0 +1,209 @@
+body {
+    display: block;
+    background-color: rebeccapurple;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    max-width: 1600px;
+    background-image: url("/backgroundsite.png");
+    
+}
+
+
+/* nav {
+
+    width: 100%;
+
+    display: flex;
+
+    position: fixed;
+
+    background-color: #00ff;
+
+    z-index: 99;
+
+} */
+
+nav a {
+
+    color: #fff;
+
+    
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+nav li {
+
+    float: left;
+
+    list-style: none;
+
+    margin-left: 20px;
+
+}
+
+.header {
+    width: 100%;
+
+    margin-left: 10px;
+    
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    opacity: 90%;
+    max-height: 100px;
+    
+    
+} 
+
+.navbar-nav {
+    /* justify-content: flex-end; */
+    font-size: 30px;
+    /* display: block; */
+    
+}
+
+    a:hover {
+        cursor: pointer;
+        background: red;
+        background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, Violet);
+        background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, Violet);
+        background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, Violet);
+        background: linear-gradient(to right, orange , yellow, green, cyan, blue, Violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        
+        
+    }
+
+
+.linke {
+    padding-right: 60px;
+    padding-left: 60px;
+    padding: 10px;
+}
+
+.icon {
+    width: 100%;
+    max-width: 90px;
+    display: inline;
+    
+}
+
+
+
+.bg-light {
+    background-color: white!important;
+}
+
+.text {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, Violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, Violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, Violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+}
+
+.bg-image {
+    
+    /* display: inline-flex;
+    background-size: cover; */
+
+     /* The image used */
+
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+     
+    
+}
+
+.btn {
+    margin: 20px;
+}
+
+
+
+@media(min-width: 360px){
+    div.card {
+        display: inline-table;
+       margin: 20px;
+        background-color: rgba(0,0,0,0.5);
+        color:#fff;
+        text-align: center;
+        width: 200px;
+        line-height: 30px;
+        
+        
+    
+    }
+}
+
+@media(max-width: 1080px){
+    div.card {
+        display: inline-table;
+        margin: 20px;
+        background-color: rgba(0,0,0,0.5);
+        color:#fff;
+        text-align: center;
+        width: 20px;
+        line-height: 30px;
+        margin-left: 30px;
+        
+    }
+    .card{
+        max-width: 200px;
+        margin-top: px;
+        margin-left: 400px;
+    }
+    .bg-image{
+        max-width: 360px;
+    }
+    .navbar {
+        max-height: 500px;   
+       }
+       .icon{
+        max-width: 45px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1586px ){
+    body{
+    min-width: 200px;
+    
+    }
+
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        text-align: center;
+  }
+  
+
+.content-box {
+    /* align-items: center; */
+    justify-content: center;
+        text-align: center;
+    text-align: center;
+    
+  }

@@ -1,0 +1,32 @@
+﻿@model QueerTrip.Models.user
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Cadastro</h1>
+
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" aria-describedby="nome" asp-for="Nome">
+    </div>
+    <div class="form-group">
+        <label for="partida">Partida</label>
+        <input type="text" class="form-control" aria-describedby="email" asp-for="Partida">
+    </div>
+    <div class="form-group">
+        <label for="destino">Destino</label>
+        <input type="text" class="form-control" asp-for="Destino">
+    </div>
+    <div class="form-group">
+        <label for="checkin">Checkin</label>
+        <input type="date" class="form-control" asp-for="Checkin">
+    </div>
+    <div class="form-group">
+        <label for="checkout">Checkout</label>
+        <input type="date" class="form-control" asp-for="Checkout">
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+

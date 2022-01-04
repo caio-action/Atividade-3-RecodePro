@@ -1,0 +1,36 @@
+﻿@model IEnumerable<QueerTrip.Models.user>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Partida</th>
+            <th scope="col">Destino</th>
+            <th scope="col">CheckIn</th>
+            <th scope="col">CheckOut</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (user user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Nome</td>
+                <td>@user.Partida</td>
+                <td>@user.Destino</td>
+                <td>@user.Checkin</td>
+                <td>@user.Checkout</td>
+                <td>
+                    <button class="btn btn-primary"><a asp-action="Editar" class="text-white" asp-route-id=@user.Id>Editar</a></button>
+                    <button class="btn btn-danger"><a asp-action="Deletar" class="text-white" asp-route-id=@user.Id>Deletar</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+

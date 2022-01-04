@@ -1,0 +1,52 @@
+﻿@model QueerTrip.Models.user
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<form asp-action="Editar" method="post">
+    <div class="form-group">
+        <label for="nome">ID</label>
+        <input type="number" class="form-control" aria-describedby="Id" asp-for="Id" value="@Model.Id" disabled>
+    </div>
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" aria-describedby@model QueerTrip.Models.Cliente>
+
+</form>
+    @{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<form asp-action="Editar" method="post">
+    <div class="form-group">
+        <label for="nome">Id</label>
+        <input type="number" class="form-control" aria-describedby="Id" asp-for="Id" value="@Model.Id" disabled>
+    </div>
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" aria-describedby="nome" asp-for="Nome" value="@Model.Nome">
+    </div>
+    <div class="form-group">
+        <label for="partida">Partida</label>
+        <input type="text" class="form-control" aria-describedby="partida" asp-for="Partida" value="@Model.Partida">
+    </div>
+    <div class="form-group">
+        <label for="destino">Destino</label>
+        <input type="text" class="form-control" asp-for="Destino" value="@Model.Destino">
+    </div>
+    <div class="form-group">
+        <label for="checkin">CheckIn</label>
+        <input type="date" class="form-control" asp-for="Checkin" value="@Model.Checkin">
+    </div>
+    <div class="form-group">
+        <label for="checkout">CheckOut</label>
+        <input type="date" class="form-control" asp-for="Checkout" value="@Model.Checkout">
+    </div>    
+    <button type="submit" class="btn btn-warning">Editar</button>
+</form>
+
